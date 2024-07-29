@@ -1,3 +1,2 @@
 # DailyWorkout
-this is a daily workout project
-changed .gitignore to get rid of IDEA files
+this is a daily workout project, nothing special, just stretching java-muscles

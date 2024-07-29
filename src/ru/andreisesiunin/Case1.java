@@ -12,7 +12,6 @@ public class Case1 {
         //what will print this code?
         System.out.println(b);
         System.out.println(b);
-        System.out.println(b);
         System.out.println(Arrays.toString(a));
     }
 }

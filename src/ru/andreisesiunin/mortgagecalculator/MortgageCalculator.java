@@ -1,4 +1,4 @@
-package ru.andreisesiunin;
+package ru.andreisesiunin.mortgagecalculator;
 
 public class MortgageCalculator {
     private static final byte MONTHS_IN_YEAR = 12;

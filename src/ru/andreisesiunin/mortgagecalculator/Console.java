@@ -1,4 +1,4 @@
-package ru.andreisesiunin;
+package ru.andreisesiunin.mortgagecalculator;
 
 import java.util.Scanner;
 

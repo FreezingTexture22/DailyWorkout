@@ -1,4 +1,4 @@
-package ru.andreisesiunin;
+package ru.andreisesiunin.mortgagecalculator;
 
 import java.text.NumberFormat;
 import java.util.Locale;

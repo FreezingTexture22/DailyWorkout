@@ -1,14 +1,19 @@
-package ru.andreisesiunin;
+package ru.andreisesiunin.taxcalculator;
 
 public class TaxReport {
-    private TaxCalculator2018 calculator;
+    private TaxCalculator calculator;
 
-    public TaxReport() {
-        calculator = new TaxCalculator2018(100_000);
+    public TaxReport(TaxCalculator calculator) {
+        this.calculator = calculator; //constructor injection
     }
 
-    public void show() {
+    public void show(TaxCalculator calculator) {
         var tax = calculator.calculateTax();
         System.out.println(tax);
     }
+
+    public void setCalculator(TaxCalculator calculator) {
+        this.calculator = calculator;
+    }
+
 }

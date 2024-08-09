@@ -15,5 +15,7 @@ public class Main {
         report.printMortgage();
         report.printPaymentSchedule();
 
+
+
     }
 }

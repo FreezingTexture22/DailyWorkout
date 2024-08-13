@@ -1,15 +1,20 @@
 package ru.andreisesiunin.mytube;
 
 public class VideoProcessor {
+    private Encodable encoder;
+    private Databasable database;
+    private Notificable notification;
+
+    public VideoProcessor(Encodable encoder, Databasable database, Notificable notification) {
+        this.encoder = encoder;
+        this.database = database;
+        this.notification = notification;
+    }
+
     public void process(Video video) {
-        var encoder = new VideoEncoder();
         encoder.encode(video);
-
-        var database = new VideoDatabase();
         database.store(video);
-
-        var emailService = new EmailService();
-        emailService.sendEmail(video.getUser());
+        notification.sendNotification(video.getUser());
     }
 }
 

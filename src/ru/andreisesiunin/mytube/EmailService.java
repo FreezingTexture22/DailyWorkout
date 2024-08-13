@@ -1,7 +1,8 @@
 package ru.andreisesiunin.mytube;
 
-public class EmailService {
-    public void sendEmail(User user) {
+public class EmailService implements Notificable {
+    @Override
+    public void sendNotification(User user) {
         System.out.println("Notifying " + user.getEmail() + "...");
         System.out.println("Done!\n");
     }

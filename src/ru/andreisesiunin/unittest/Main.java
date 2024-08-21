@@ -7,7 +7,7 @@ public class Main {
 
     }
 
-    public void test() {
-
+    public int addition(int a, int b) {
+        return a + b;
     }
 }
